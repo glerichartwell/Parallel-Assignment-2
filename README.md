@@ -23,8 +23,8 @@ To compile and run the Crystal Vase code at the command line in Ubuntu or Window
 
 ## Problem 2 Stategy Discussion ##
 
-After reading through the different strategies for viewing the Minotaur's crystal vase I realized that they were  
-describing the exact protocols from some of the locks we learned in chapter 7.  
+After reading through the different strategies for viewing the Minotaur's crystal vase I realized that they were describing the exact protocols from 
+some of the locks we learned in chapter 7. All of these methods provide deadlock-free mutual exclusion.
 
 The first protocol follows the same idea that a TAS lock does. This allows the thread to constantly bombard the cpu with requests to acquire the lock.  
 While this strategy will guarantee deadlock-free mutual exclusion it does not provide the best possible efficiency overall. However, I will note that  
